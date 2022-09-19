@@ -4,14 +4,14 @@ const { promiseTheaterIXX, promiseTheaterVGC } = require("./external.js");
 //const promiseOutput = null;
 
 const promiseOutput = (emosi) =>{
-  let hasil = 0;
+  let hitung = 0;
   
   return new Promise(async (resolve) => {
     let theaterIIX = await promiseTheaterIXX()
       .then((data) => {
         data.forEach(element => {
           if (element.hasil === emosi){
-            hasil++;
+            hitung++;
           }
         });
       });
@@ -20,7 +20,7 @@ const promiseOutput = (emosi) =>{
       .then((data) => {
         data.forEach(element => {
           if (element.hasil === emosi){
-            hasil++;
+            hitung++;
           }
         });
       });
