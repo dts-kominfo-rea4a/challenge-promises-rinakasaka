@@ -24,6 +24,8 @@ const promiseOutput = (emosi) =>{
           }
         });
       });
+
+      resolve(hitung)
   });
 
 };
